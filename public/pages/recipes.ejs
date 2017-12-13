@@ -1,4 +1,4 @@
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" id="recipelist">
 
 
     <h1>List All Recipes</h1>
@@ -15,7 +15,7 @@
                     <!--<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(donation._id)"></span>-->
                     <!--{{donation.upvotes}}-->
                     <!--</td>-->
-                    <td>
+                    <td name="recipename">
                         <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{recipe.recipename}}</span>
                     </td>
                     <td>
@@ -33,16 +33,16 @@
                     <!--</td>-->
                     <td>
 
-                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
+                        <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
 
 
-                    <button type="button" class="btn btn-default" ng-click="delete(recipe._id)">
-                        <span class="glyphicon glyphicon-remove"></span> Remove
-                    </button>
-                    <button type="button" class="btn btn-default" ng-click="update(recipe)">
-                        <span class="glyphicon glyphicon-edit"></span> Edit
-                    </button>
-                    </span>
+                        <button type="button" class="btn btn-default" ng-click="delete(recipe._id)">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button>
+                        <button type="button" class="btn btn-default" ng-click="update(recipe)">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+                        </button>
+                        </span>
                     </td>
                     </tr>
                     </tbody></div>
